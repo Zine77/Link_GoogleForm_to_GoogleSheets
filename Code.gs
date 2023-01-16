@@ -1,10 +1,10 @@
 function EditForm() {
   var form = FormApp.openById('GOOGLE_FORM_ID');
 
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('GOOGLE_SHEET_NAME');
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('GOOGLE_SHEETS_NAME');
 
   var data = sheet.getDataRange().getValues();
-  var urlCol = COLUME_NO; 
+  var urlCol = COLUME_NO_IN_GOOGLESHEETS; 
   var responses = form.getResponses();
   var timestamps = [], urls = [], resultUrls = [];
   
